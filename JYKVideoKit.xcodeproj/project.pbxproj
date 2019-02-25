@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		697B37442223BF25002946EC /* JYKVideoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 697B37422223BF25002946EC /* JYKVideoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		697B375C2223C202002946EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B375B2223C202002946EC /* AppDelegate.m */; };
+		697B375F2223C202002946EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B375E2223C202002946EC /* ViewController.m */; };
+		697B37622223C202002946EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697B37602223C202002946EC /* Main.storyboard */; };
+		697B37642223C203002946EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 697B37632223C203002946EC /* Assets.xcassets */; };
+		697B37672223C203002946EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697B37652223C203002946EC /* LaunchScreen.storyboard */; };
+		697B376A2223C203002946EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B37692223C203002946EC /* main.m */; };
+		697B377C2223C5D1002946EC /* JYKVideoRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 697B377A2223C5D1002946EC /* JYKVideoRecorder.h */; };
+		697B377D2223C5D1002946EC /* JYKVideoRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B377B2223C5D1002946EC /* JYKVideoRecorder.m */; };
+		697B37802223C5E9002946EC /* JYKVideoService.h in Headers */ = {isa = PBXBuildFile; fileRef = 697B377E2223C5E9002946EC /* JYKVideoService.h */; };
+		697B37812223C5E9002946EC /* JYKVideoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B377F2223C5E9002946EC /* JYKVideoService.m */; };
+		697B37842223C623002946EC /* JYKBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 697B37822223C623002946EC /* JYKBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		697B37852223C623002946EC /* JYKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B37832223C623002946EC /* JYKBaseViewController.m */; };
+		697B37882223C649002946EC /* JYKBaseNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 697B37862223C649002946EC /* JYKBaseNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		697B37892223C649002946EC /* JYKBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B37872223C649002946EC /* JYKBaseNavigationController.m */; };
+		697B378C2223C68D002946EC /* JYKPreView.h in Headers */ = {isa = PBXBuildFile; fileRef = 697B378A2223C68D002946EC /* JYKPreView.h */; };
+		697B378D2223C68D002946EC /* JYKPreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B378B2223C68D002946EC /* JYKPreView.m */; };
+		697B37902223C6C5002946EC /* JYKRecordViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 697B378E2223C6C5002946EC /* JYKRecordViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		697B37912223C6C5002946EC /* JYKRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B378F2223C6C5002946EC /* JYKRecordViewController.m */; };
+		697B37AA2223E56C002946EC /* JYKVideoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697B373F2223BF25002946EC /* JYKVideoKit.framework */; };
+		697B37AB2223E56C002946EC /* JYKVideoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 697B373F2223BF25002946EC /* JYKVideoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		697B37A82223E402002946EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 697B37362223BF24002946EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 697B373E2223BF25002946EC;
+			remoteInfo = JYKVideoKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		697B37AC2223E56C002946EC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				697B37AB2223E56C002946EC /* JYKVideoKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		697B373F2223BF25002946EC /* JYKVideoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JYKVideoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		697B37422223BF25002946EC /* JYKVideoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKVideoKit.h; sourceTree = "<group>"; };
+		697B37432223BF25002946EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		697B37582223C201002946EC /* JYKVideoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYKVideoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		697B375A2223C201002946EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		697B375B2223C202002946EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		697B375D2223C202002946EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		697B375E2223C202002946EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		697B37612223C202002946EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		697B37632223C203002946EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		697B37662223C203002946EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		697B37682223C203002946EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		697B37692223C203002946EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		697B377A2223C5D1002946EC /* JYKVideoRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKVideoRecorder.h; sourceTree = "<group>"; };
+		697B377B2223C5D1002946EC /* JYKVideoRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKVideoRecorder.m; sourceTree = "<group>"; };
+		697B377E2223C5E9002946EC /* JYKVideoService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKVideoService.h; sourceTree = "<group>"; };
+		697B377F2223C5E9002946EC /* JYKVideoService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKVideoService.m; sourceTree = "<group>"; };
+		697B37822223C623002946EC /* JYKBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKBaseViewController.h; sourceTree = "<group>"; };
+		697B37832223C623002946EC /* JYKBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKBaseViewController.m; sourceTree = "<group>"; };
+		697B37862223C649002946EC /* JYKBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKBaseNavigationController.h; sourceTree = "<group>"; };
+		697B37872223C649002946EC /* JYKBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKBaseNavigationController.m; sourceTree = "<group>"; };
+		697B378A2223C68D002946EC /* JYKPreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKPreView.h; sourceTree = "<group>"; };
+		697B378B2223C68D002946EC /* JYKPreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKPreView.m; sourceTree = "<group>"; };
+		697B378E2223C6C5002946EC /* JYKRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKRecordViewController.h; sourceTree = "<group>"; };
+		697B378F2223C6C5002946EC /* JYKRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKRecordViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		697B373C2223BF25002946EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		697B37552223C201002946EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697B37AA2223E56C002946EC /* JYKVideoKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		697B37352223BF24002946EC = {
+			isa = PBXGroup;
+			children = (
+				697B37412223BF25002946EC /* JYKVideoKit */,
+				697B37592223C201002946EC /* JYKVideoDemo */,
+				697B37402223BF25002946EC /* Products */,
+				697B376F2223C496002946EC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		697B37402223BF25002946EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				697B373F2223BF25002946EC /* JYKVideoKit.framework */,
+				697B37582223C201002946EC /* JYKVideoDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		697B37412223BF25002946EC /* JYKVideoKit */ = {
+			isa = PBXGroup;
+			children = (
+				697B37722223C4F2002946EC /* Core */,
+				697B37742223C509002946EC /* Service */,
+				697B37752223C517002946EC /* UI */,
+				697B37792223C57F002946EC /* Supporting Files */,
+			);
+			path = JYKVideoKit;
+			sourceTree = "<group>";
+		};
+		697B37592223C201002946EC /* JYKVideoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				697B375A2223C201002946EC /* AppDelegate.h */,
+				697B375B2223C202002946EC /* AppDelegate.m */,
+				697B375D2223C202002946EC /* ViewController.h */,
+				697B375E2223C202002946EC /* ViewController.m */,
+				697B37602223C202002946EC /* Main.storyboard */,
+				697B37632223C203002946EC /* Assets.xcassets */,
+				697B37652223C203002946EC /* LaunchScreen.storyboard */,
+				697B37682223C203002946EC /* Info.plist */,
+				697B37692223C203002946EC /* main.m */,
+			);
+			path = JYKVideoDemo;
+			sourceTree = "<group>";
+		};
+		697B376F2223C496002946EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		697B37722223C4F2002946EC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				697B37732223C4FA002946EC /* Record */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		697B37732223C4FA002946EC /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				697B377A2223C5D1002946EC /* JYKVideoRecorder.h */,
+				697B377B2223C5D1002946EC /* JYKVideoRecorder.m */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		697B37742223C509002946EC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				697B377E2223C5E9002946EC /* JYKVideoService.h */,
+				697B377F2223C5E9002946EC /* JYKVideoService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		697B37752223C517002946EC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				697B37762223C51F002946EC /* Base */,
+				697B37772223C526002946EC /* Preview */,
+				697B37782223C532002946EC /* Record */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		697B37762223C51F002946EC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				697B37822223C623002946EC /* JYKBaseViewController.h */,
+				697B37832223C623002946EC /* JYKBaseViewController.m */,
+				697B37862223C649002946EC /* JYKBaseNavigationController.h */,
+				697B37872223C649002946EC /* JYKBaseNavigationController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		697B37772223C526002946EC /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				697B378A2223C68D002946EC /* JYKPreView.h */,
+				697B378B2223C68D002946EC /* JYKPreView.m */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		697B37782223C532002946EC /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				697B378E2223C6C5002946EC /* JYKRecordViewController.h */,
+				697B378F2223C6C5002946EC /* JYKRecordViewController.m */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		697B37792223C57F002946EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				697B37422223BF25002946EC /* JYKVideoKit.h */,
+				697B37432223BF25002946EC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		697B373A2223BF25002946EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697B37802223C5E9002946EC /* JYKVideoService.h in Headers */,
+				697B37842223C623002946EC /* JYKBaseViewController.h in Headers */,
+				697B37902223C6C5002946EC /* JYKRecordViewController.h in Headers */,
+				697B37882223C649002946EC /* JYKBaseNavigationController.h in Headers */,
+				697B378C2223C68D002946EC /* JYKPreView.h in Headers */,
+				697B37442223BF25002946EC /* JYKVideoKit.h in Headers */,
+				697B377C2223C5D1002946EC /* JYKVideoRecorder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		697B373E2223BF25002946EC /* JYKVideoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 697B37472223BF25002946EC /* Build configuration list for PBXNativeTarget "JYKVideoKit" */;
+			buildPhases = (
+				697B373A2223BF25002946EC /* Headers */,
+				697B373B2223BF25002946EC /* Sources */,
+				697B373C2223BF25002946EC /* Frameworks */,
+				697B373D2223BF25002946EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JYKVideoKit;
+			productName = JYKVideoKit;
+			productReference = 697B373F2223BF25002946EC /* JYKVideoKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		697B37572223C201002946EC /* JYKVideoDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 697B376B2223C203002946EC /* Build configuration list for PBXNativeTarget "JYKVideoDemo" */;
+			buildPhases = (
+				697B37542223C201002946EC /* Sources */,
+				697B37552223C201002946EC /* Frameworks */,
+				697B37562223C201002946EC /* Resources */,
+				697B37AC2223E56C002946EC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				697B37A92223E402002946EC /* PBXTargetDependency */,
+			);
+			name = JYKVideoDemo;
+			productName = JYKVideoDemo;
+			productReference = 697B37582223C201002946EC /* JYKVideoDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		697B37362223BF24002946EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Joyoki;
+				TargetAttributes = {
+					697B373E2223BF25002946EC = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					697B37572223C201002946EC = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 697B37392223BF24002946EC /* Build configuration list for PBXProject "JYKVideoKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 697B37352223BF24002946EC;
+			productRefGroup = 697B37402223BF25002946EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				697B373E2223BF25002946EC /* JYKVideoKit */,
+				697B37572223C201002946EC /* JYKVideoDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		697B373D2223BF25002946EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		697B37562223C201002946EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697B37672223C203002946EC /* LaunchScreen.storyboard in Resources */,
+				697B37642223C203002946EC /* Assets.xcassets in Resources */,
+				697B37622223C202002946EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		697B373B2223BF25002946EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697B37852223C623002946EC /* JYKBaseViewController.m in Sources */,
+				697B378D2223C68D002946EC /* JYKPreView.m in Sources */,
+				697B37892223C649002946EC /* JYKBaseNavigationController.m in Sources */,
+				697B37812223C5E9002946EC /* JYKVideoService.m in Sources */,
+				697B37912223C6C5002946EC /* JYKRecordViewController.m in Sources */,
+				697B377D2223C5D1002946EC /* JYKVideoRecorder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		697B37542223C201002946EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697B375F2223C202002946EC /* ViewController.m in Sources */,
+				697B376A2223C203002946EC /* main.m in Sources */,
+				697B375C2223C202002946EC /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		697B37A92223E402002946EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 697B373E2223BF25002946EC /* JYKVideoKit */;
+			targetProxy = 697B37A82223E402002946EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		697B37602223C202002946EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				697B37612223C202002946EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		697B37652223C203002946EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				697B37662223C203002946EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		697B37452223BF25002946EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		697B37462223BF25002946EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		697B37482223BF25002946EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2AG95DX2G9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = JYKVideoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joyoki.JYKVideoKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		697B37492223BF25002946EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2AG95DX2G9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = JYKVideoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joyoki.JYKVideoKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		697B376C2223C203002946EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AG95DX2G9;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = JYKVideoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joyoki.JYKVideoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		697B376D2223C203002946EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AG95DX2G9;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = JYKVideoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joyoki.JYKVideoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		697B37392223BF24002946EC /* Build configuration list for PBXProject "JYKVideoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				697B37452223BF25002946EC /* Debug */,
+				697B37462223BF25002946EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		697B37472223BF25002946EC /* Build configuration list for PBXNativeTarget "JYKVideoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				697B37482223BF25002946EC /* Debug */,
+				697B37492223BF25002946EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		697B376B2223C203002946EC /* Build configuration list for PBXNativeTarget "JYKVideoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				697B376C2223C203002946EC /* Debug */,
+				697B376D2223C203002946EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 697B37362223BF24002946EC /* Project object */;
+}
