@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69037D2A222FB2C200BEDEAF /* JYKDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 69037D28222FB2C200BEDEAF /* JYKDevice.h */; };
+		69037D2B222FB2C200BEDEAF /* JYKDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 69037D29222FB2C200BEDEAF /* JYKDevice.m */; };
+		69037D382230F2DA00BEDEAF /* JYKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 69037D362230F2D900BEDEAF /* JYKViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69037D392230F2DA00BEDEAF /* JYKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69037D372230F2D900BEDEAF /* JYKViewController.m */; };
 		697B37442223BF25002946EC /* JYKVideoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 697B37422223BF25002946EC /* JYKVideoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		697B377C2223C5D1002946EC /* JYKVideoRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 697B377A2223C5D1002946EC /* JYKVideoRecorder.h */; };
 		697B377D2223C5D1002946EC /* JYKVideoRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B377B2223C5D1002946EC /* JYKVideoRecorder.m */; };
-		697B37802223C5E9002946EC /* JYKVideoService.h in Headers */ = {isa = PBXBuildFile; fileRef = 697B377E2223C5E9002946EC /* JYKVideoService.h */; };
-		697B37812223C5E9002946EC /* JYKVideoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B377F2223C5E9002946EC /* JYKVideoService.m */; };
-		697B37842223C623002946EC /* JYKBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 697B37822223C623002946EC /* JYKBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		697B37842223C623002946EC /* JYKBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 697B37822223C623002946EC /* JYKBaseViewController.h */; };
 		697B37852223C623002946EC /* JYKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B37832223C623002946EC /* JYKBaseViewController.m */; };
-		697B37882223C649002946EC /* JYKBaseNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 697B37862223C649002946EC /* JYKBaseNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		697B37892223C649002946EC /* JYKBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B37872223C649002946EC /* JYKBaseNavigationController.m */; };
 		697B378C2223C68D002946EC /* JYKPreView.h in Headers */ = {isa = PBXBuildFile; fileRef = 697B378A2223C68D002946EC /* JYKPreView.h */; };
 		697B378D2223C68D002946EC /* JYKPreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B378B2223C68D002946EC /* JYKPreView.m */; };
-		697B37902223C6C5002946EC /* JYKRecordViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 697B378E2223C6C5002946EC /* JYKRecordViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		697B37902223C6C5002946EC /* JYKRecordViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 697B378E2223C6C5002946EC /* JYKRecordViewController.h */; };
 		697B37912223C6C5002946EC /* JYKRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B378F2223C6C5002946EC /* JYKRecordViewController.m */; };
 		697B37B72224D52F002946EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B37B62224D52F002946EC /* AppDelegate.m */; };
 		697B37BA2224D52F002946EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B37B92224D52F002946EC /* ViewController.m */; };
@@ -28,6 +28,8 @@
 		697B37C52224D530002946EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B37C42224D530002946EC /* main.m */; };
 		697B37CA2224D548002946EC /* JYKVideoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697B373F2223BF25002946EC /* JYKVideoKit.framework */; };
 		697B37CB2224D548002946EC /* JYKVideoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 697B373F2223BF25002946EC /* JYKVideoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		69FA51A22231382C00080FF8 /* UIView+JYKVideo.h in Headers */ = {isa = PBXBuildFile; fileRef = 69FA51A02231382C00080FF8 /* UIView+JYKVideo.h */; };
+		69FA51A32231382C00080FF8 /* UIView+JYKVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FA51A12231382C00080FF8 /* UIView+JYKVideo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,17 +57,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		69037D28222FB2C200BEDEAF /* JYKDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKDevice.h; sourceTree = "<group>"; };
+		69037D29222FB2C200BEDEAF /* JYKDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKDevice.m; sourceTree = "<group>"; };
+		69037D362230F2D900BEDEAF /* JYKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKViewController.h; sourceTree = "<group>"; };
+		69037D372230F2D900BEDEAF /* JYKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKViewController.m; sourceTree = "<group>"; };
+		69037D3A2230F58D00BEDEAF /* JYKAssertDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKAssertDefine.h; sourceTree = "<group>"; };
 		697B373F2223BF25002946EC /* JYKVideoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JYKVideoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		697B37422223BF25002946EC /* JYKVideoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKVideoKit.h; sourceTree = "<group>"; };
 		697B37432223BF25002946EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		697B377A2223C5D1002946EC /* JYKVideoRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKVideoRecorder.h; sourceTree = "<group>"; };
 		697B377B2223C5D1002946EC /* JYKVideoRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKVideoRecorder.m; sourceTree = "<group>"; };
-		697B377E2223C5E9002946EC /* JYKVideoService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKVideoService.h; sourceTree = "<group>"; };
-		697B377F2223C5E9002946EC /* JYKVideoService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKVideoService.m; sourceTree = "<group>"; };
 		697B37822223C623002946EC /* JYKBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKBaseViewController.h; sourceTree = "<group>"; };
 		697B37832223C623002946EC /* JYKBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKBaseViewController.m; sourceTree = "<group>"; };
-		697B37862223C649002946EC /* JYKBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKBaseNavigationController.h; sourceTree = "<group>"; };
-		697B37872223C649002946EC /* JYKBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKBaseNavigationController.m; sourceTree = "<group>"; };
 		697B378A2223C68D002946EC /* JYKPreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKPreView.h; sourceTree = "<group>"; };
 		697B378B2223C68D002946EC /* JYKPreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKPreView.m; sourceTree = "<group>"; };
 		697B378E2223C6C5002946EC /* JYKRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKRecordViewController.h; sourceTree = "<group>"; };
@@ -81,6 +84,8 @@
 		697B37C12224D530002946EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		697B37C32224D530002946EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		697B37C42224D530002946EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		69FA51A02231382C00080FF8 /* UIView+JYKVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JYKVideo.h"; sourceTree = "<group>"; };
+		69FA51A12231382C00080FF8 /* UIView+JYKVideo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JYKVideo.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +107,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69037D2C222FB54B00BEDEAF /* Defs */ = {
+			isa = PBXGroup;
+			children = (
+				69037D3A2230F58D00BEDEAF /* JYKAssertDefine.h */,
+			);
+			path = Defs;
+			sourceTree = "<group>";
+		};
 		697B37352223BF24002946EC = {
 			isa = PBXGroup;
 			children = (
@@ -125,9 +138,13 @@
 		697B37412223BF25002946EC /* JYKVideoKit */ = {
 			isa = PBXGroup;
 			children = (
-				697B37722223C4F2002946EC /* Core */,
-				697B37742223C509002946EC /* Service */,
-				697B37752223C517002946EC /* UI */,
+				69037D362230F2D900BEDEAF /* JYKViewController.h */,
+				69037D372230F2D900BEDEAF /* JYKViewController.m */,
+				69037D2C222FB54B00BEDEAF /* Defs */,
+				697B37732223C4FA002946EC /* Record */,
+				697B37772223C526002946EC /* Preview */,
+				697B37742223C509002946EC /* Utils */,
+				697B37762223C51F002946EC /* Base */,
 				697B37792223C57F002946EC /* Supporting Files */,
 			);
 			path = JYKVideoKit;
@@ -140,40 +157,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		697B37722223C4F2002946EC /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				697B37732223C4FA002946EC /* Record */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
 		697B37732223C4FA002946EC /* Record */ = {
 			isa = PBXGroup;
 			children = (
+				697B378E2223C6C5002946EC /* JYKRecordViewController.h */,
+				697B378F2223C6C5002946EC /* JYKRecordViewController.m */,
 				697B377A2223C5D1002946EC /* JYKVideoRecorder.h */,
 				697B377B2223C5D1002946EC /* JYKVideoRecorder.m */,
+				69037D28222FB2C200BEDEAF /* JYKDevice.h */,
+				69037D29222FB2C200BEDEAF /* JYKDevice.m */,
 			);
 			path = Record;
 			sourceTree = "<group>";
 		};
-		697B37742223C509002946EC /* Service */ = {
+		697B37742223C509002946EC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				697B377E2223C5E9002946EC /* JYKVideoService.h */,
-				697B377F2223C5E9002946EC /* JYKVideoService.m */,
+				69FA51A02231382C00080FF8 /* UIView+JYKVideo.h */,
+				69FA51A12231382C00080FF8 /* UIView+JYKVideo.m */,
 			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		697B37752223C517002946EC /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				697B37762223C51F002946EC /* Base */,
-				697B37772223C526002946EC /* Preview */,
-				697B37782223C532002946EC /* Record */,
-			);
-			path = UI;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		697B37762223C51F002946EC /* Base */ = {
@@ -181,8 +184,6 @@
 			children = (
 				697B37822223C623002946EC /* JYKBaseViewController.h */,
 				697B37832223C623002946EC /* JYKBaseViewController.m */,
-				697B37862223C649002946EC /* JYKBaseNavigationController.h */,
-				697B37872223C649002946EC /* JYKBaseNavigationController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -194,15 +195,6 @@
 				697B378B2223C68D002946EC /* JYKPreView.m */,
 			);
 			path = Preview;
-			sourceTree = "<group>";
-		};
-		697B37782223C532002946EC /* Record */ = {
-			isa = PBXGroup;
-			children = (
-				697B378E2223C6C5002946EC /* JYKRecordViewController.h */,
-				697B378F2223C6C5002946EC /* JYKRecordViewController.m */,
-			);
-			path = Record;
 			sourceTree = "<group>";
 		};
 		697B37792223C57F002946EC /* Supporting Files */ = {
@@ -237,13 +229,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				697B37802223C5E9002946EC /* JYKVideoService.h in Headers */,
+				69FA51A22231382C00080FF8 /* UIView+JYKVideo.h in Headers */,
+				697B37442223BF25002946EC /* JYKVideoKit.h in Headers */,
+				69037D382230F2DA00BEDEAF /* JYKViewController.h in Headers */,
+				697B377C2223C5D1002946EC /* JYKVideoRecorder.h in Headers */,
 				697B37842223C623002946EC /* JYKBaseViewController.h in Headers */,
 				697B37902223C6C5002946EC /* JYKRecordViewController.h in Headers */,
-				697B37882223C649002946EC /* JYKBaseNavigationController.h in Headers */,
 				697B378C2223C68D002946EC /* JYKPreView.h in Headers */,
-				697B37442223BF25002946EC /* JYKVideoKit.h in Headers */,
-				697B377C2223C5D1002946EC /* JYKVideoRecorder.h in Headers */,
+				69037D2A222FB2C200BEDEAF /* JYKDevice.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,10 +342,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				697B37852223C623002946EC /* JYKBaseViewController.m in Sources */,
+				69FA51A32231382C00080FF8 /* UIView+JYKVideo.m in Sources */,
 				697B378D2223C68D002946EC /* JYKPreView.m in Sources */,
-				697B37892223C649002946EC /* JYKBaseNavigationController.m in Sources */,
-				697B37812223C5E9002946EC /* JYKVideoService.m in Sources */,
+				69037D392230F2DA00BEDEAF /* JYKViewController.m in Sources */,
 				697B37912223C6C5002946EC /* JYKRecordViewController.m in Sources */,
+				69037D2B222FB2C200BEDEAF /* JYKDevice.m in Sources */,
 				697B377D2223C5D1002946EC /* JYKVideoRecorder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

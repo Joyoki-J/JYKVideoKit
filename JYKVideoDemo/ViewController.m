@@ -24,16 +24,15 @@
     btn.frame = CGRectMake(0, 0, 100, 40);
     btn.layer.borderColor = [UIColor blueColor].CGColor;
     btn.layer.borderWidth = 1.f / [UIScreen mainScreen].scale;
-    btn.center = self.view.center;
+    btn.center = CGPointMake(self.view.center.x, self.view.center.y - 200);
     [btn setTitle:@"开始" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(onClickAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
 }
 
 - (void)onClickAction {
-    JYKRecordViewController *vc = [JYKRecordViewController new];
-    JYKBaseNavigationController *nav = [[JYKBaseNavigationController alloc] initWithRootViewController:vc];
-    [self presentViewController:nav animated:YES completion:nil];
+    JYKViewController *vcRecord = [[JYKViewController alloc] init];
+    [self presentViewController:vcRecord animated:YES completion:nil];
 }
 
 

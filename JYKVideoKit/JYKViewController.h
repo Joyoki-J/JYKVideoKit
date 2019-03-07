@@ -1,18 +1,16 @@
 //
-//  JYKPreView.h
+//  JYKViewController.h
 //  JYKVideoKit
 //
-//  Created by Joyoki on 2019/2/25.
+//  Created by Jay on 2019/3/7.
 //  Copyright © 2019年 Joyoki. All rights reserved.
-//
-//  github: https://github.com/Joyoki-J/JYKVideoKit
 //
 
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JYKPreView : UIView
+@interface JYKViewController : UINavigationController
 
 @end
 

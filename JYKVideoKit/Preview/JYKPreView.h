@@ -1,5 +1,5 @@
 //
-//  JYKVideoService.h
+//  JYKPreView.h
 //  JYKVideoKit
 //
 //  Created by Joyoki on 2019/2/25.
@@ -8,11 +8,14 @@
 //  github: https://github.com/Joyoki-J/JYKVideoKit
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JYKVideoService : NSObject
+@interface JYKPreView : UIView
+
+@property (nonatomic, strong, readonly) AVCaptureVideoPreviewLayer *previewLayer;
 
 @end
 

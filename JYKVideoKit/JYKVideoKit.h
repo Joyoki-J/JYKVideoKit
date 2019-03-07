@@ -15,7 +15,5 @@ FOUNDATION_EXPORT double JYKVideoKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char JYKVideoKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <JYKVideoKit/PublicHeader.h>
-#import <JYKVideoKit/JYKRecordViewController.h>
-#import <JYKVideoKit/JYKBaseViewController.h>
-#import <JYKVideoKit/JYKBaseNavigationController.h>
+#import <JYKVideoKit/JYKViewController.h>
 

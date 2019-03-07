@@ -1,5 +1,5 @@
 //
-//  JYKBaseNavigationController.h
+//  JYKVideoRecorder.h
 //  JYKVideoKit
 //
 //  Created by Joyoki on 2019/2/25.
@@ -8,11 +8,14 @@
 //  github: https://github.com/Joyoki-J/JYKVideoKit
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "JYKPreView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JYKBaseNavigationController : UINavigationController
+@interface JYKVideoRecorder : NSObject
+
+@property (nonatomic, strong, readonly) JYKPreView *preView;
 
 @end
 
