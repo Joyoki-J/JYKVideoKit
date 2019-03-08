@@ -1,14 +1,14 @@
 //
-//  UIView+JYKVideo.m
+//  UIView+JYKLayout.m
 //  JYKVideoKit
 //
-//  Created by Jay on 2019/3/7.
+//  Created by Jay on 2019/3/8.
 //  Copyright © 2019年 Joyoki. All rights reserved.
 //
 
-#import "UIView+JYKVideo.h"
+#import "UIView+JYKLayout.h"
 
-@implementation UIView (JYKVideo)
+@implementation UIView (JYKLayout)
 
 - (void)setJyk_x:(CGFloat)jyk_x {
     CGRect frame = self.frame;

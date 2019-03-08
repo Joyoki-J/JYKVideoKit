@@ -1,14 +1,14 @@
 //
-//  UIView+JYKVideo.h
+//  UIView+JYKLayout.h
 //  JYKVideoKit
 //
-//  Created by Jay on 2019/3/7.
+//  Created by Jay on 2019/3/8.
 //  Copyright © 2019年 Joyoki. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (JYKVideo)
+@interface UIView (JYKLayout)
 
 @property (nonatomic) CGFloat jyk_x;  //min x
 @property (nonatomic) CGFloat jyk_y;  //min y
@@ -22,4 +22,3 @@
 @property (nonatomic) CGPoint jyk_o;  //origin
 
 @end
-
