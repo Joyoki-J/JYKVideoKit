@@ -8,8 +8,9 @@
 //  github: https://github.com/Joyoki-J/JYKVideoKit
 //
 
-#import "JYKVideoRecorder.h"
 #import <AVFoundation/AVFoundation.h>
+#import "JYKVideoRecorder.h"
+#import "JYKVideoContext.h"
 
 @interface JYKVideoRecorder ()
 

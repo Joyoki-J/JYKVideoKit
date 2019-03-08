@@ -30,6 +30,10 @@
 		697B37CB2224D548002946EC /* JYKVideoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 697B373F2223BF25002946EC /* JYKVideoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		69FA51A22231382C00080FF8 /* UIView+JYKVideo.h in Headers */ = {isa = PBXBuildFile; fileRef = 69FA51A02231382C00080FF8 /* UIView+JYKVideo.h */; };
 		69FA51A32231382C00080FF8 /* UIView+JYKVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FA51A12231382C00080FF8 /* UIView+JYKVideo.m */; };
+		69FA51A62231FCDB00080FF8 /* JYKVideoContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 69FA51A42231FCDB00080FF8 /* JYKVideoContext.h */; };
+		69FA51A72231FCDB00080FF8 /* JYKVideoContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FA51A52231FCDB00080FF8 /* JYKVideoContext.m */; };
+		69FA51AB22320D5400080FF8 /* JYKVideoQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 69FA51A922320D5400080FF8 /* JYKVideoQueue.h */; };
+		69FA51AC22320D5400080FF8 /* JYKVideoQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FA51AA22320D5400080FF8 /* JYKVideoQueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +90,10 @@
 		697B37C42224D530002946EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69FA51A02231382C00080FF8 /* UIView+JYKVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JYKVideo.h"; sourceTree = "<group>"; };
 		69FA51A12231382C00080FF8 /* UIView+JYKVideo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JYKVideo.m"; sourceTree = "<group>"; };
+		69FA51A42231FCDB00080FF8 /* JYKVideoContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKVideoContext.h; sourceTree = "<group>"; };
+		69FA51A52231FCDB00080FF8 /* JYKVideoContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKVideoContext.m; sourceTree = "<group>"; };
+		69FA51A922320D5400080FF8 /* JYKVideoQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKVideoQueue.h; sourceTree = "<group>"; };
+		69FA51AA22320D5400080FF8 /* JYKVideoQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKVideoQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +183,10 @@
 			children = (
 				69FA51A02231382C00080FF8 /* UIView+JYKVideo.h */,
 				69FA51A12231382C00080FF8 /* UIView+JYKVideo.m */,
+				69FA51A42231FCDB00080FF8 /* JYKVideoContext.h */,
+				69FA51A52231FCDB00080FF8 /* JYKVideoContext.m */,
+				69FA51A922320D5400080FF8 /* JYKVideoQueue.h */,
+				69FA51AA22320D5400080FF8 /* JYKVideoQueue.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -230,11 +242,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				69FA51A22231382C00080FF8 /* UIView+JYKVideo.h in Headers */,
+				69FA51A62231FCDB00080FF8 /* JYKVideoContext.h in Headers */,
 				697B37442223BF25002946EC /* JYKVideoKit.h in Headers */,
 				69037D382230F2DA00BEDEAF /* JYKViewController.h in Headers */,
 				697B377C2223C5D1002946EC /* JYKVideoRecorder.h in Headers */,
 				697B37842223C623002946EC /* JYKBaseViewController.h in Headers */,
 				697B37902223C6C5002946EC /* JYKRecordViewController.h in Headers */,
+				69FA51AB22320D5400080FF8 /* JYKVideoQueue.h in Headers */,
 				697B378C2223C68D002946EC /* JYKPreView.h in Headers */,
 				69037D2A222FB2C200BEDEAF /* JYKDevice.h in Headers */,
 			);
@@ -346,7 +360,9 @@
 				697B378D2223C68D002946EC /* JYKPreView.m in Sources */,
 				69037D392230F2DA00BEDEAF /* JYKViewController.m in Sources */,
 				697B37912223C6C5002946EC /* JYKRecordViewController.m in Sources */,
+				69FA51AC22320D5400080FF8 /* JYKVideoQueue.m in Sources */,
 				69037D2B222FB2C200BEDEAF /* JYKDevice.m in Sources */,
+				69FA51A72231FCDB00080FF8 /* JYKVideoContext.m in Sources */,
 				697B377D2223C5D1002946EC /* JYKVideoRecorder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

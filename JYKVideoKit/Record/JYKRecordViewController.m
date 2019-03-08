@@ -11,7 +11,7 @@
 #import "JYKRecordViewController.h"
 #import "JYKVideoRecorder.h"
 #import "JYKPreView.h"
-
+#import "JYKVideoContext.h"
 @interface JYKRecordViewController ()
 
 @property (nonatomic, strong) JYKVideoRecorder *recorder;
@@ -26,6 +26,7 @@
     [self createSubViews];
     
     [self createVideoRecorder];
+    
 }
 
 - (void)createVideoRecorder {
