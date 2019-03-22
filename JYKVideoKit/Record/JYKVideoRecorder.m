@@ -9,28 +9,54 @@
 //
 
 #import <AVFoundation/AVFoundation.h>
+#import "JYKPreView.h"
 #import "JYKVideoRecorder.h"
 #import "JYKVideoContext.h"
+#import "JYKAssertDefine.h"
 
 @interface JYKVideoRecorder ()
-
-@property (nonatomic, strong, readwrite) JYKPreView *preView;
+{
+    JYKPreView *_preView;
+}
 
 @end
 
 @implementation JYKVideoRecorder
 
-- (instancetype)init
+- (instancetype)initWithPreView:(JYKPreView *)preView
 {
     self = [super init];
     if (self) {
-        [self createPreView];
+        _preView = preView;
     }
     return self;
 }
 
-- (void)createPreView {
-    _preView = [[JYKPreView alloc] init];
+#pragma mark - Get&Set
+- (JYKPreView *)preView {
+    return _preView;
 }
+
+#pragma mark - Private
+
+
+
+#pragma mark - Public
+- (BOOL)startPreView {
+    
+    JYKSafeAssert(_preView, NO);
+    AVAuthorizationStatus cameraStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+    JYKSafeAssert(cameraStatus != AVAuthorizationStatusDenied, NO);
+    AVAuthorizationStatus micphoneStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeAudio];
+    JYKSafeAssert(micphoneStatus != AVAuthorizationStatusDenied, NO);
+    
+    
+    return YES;
+}
+
+- (BOOL)stopPreView {
+    return YES;
+}
+
 
 @end

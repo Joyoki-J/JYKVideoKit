@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69037D2A222FB2C200BEDEAF /* JYKDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 69037D28222FB2C200BEDEAF /* JYKDevice.h */; };
-		69037D2B222FB2C200BEDEAF /* JYKDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 69037D29222FB2C200BEDEAF /* JYKDevice.m */; };
 		69037D382230F2DA00BEDEAF /* JYKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 69037D362230F2D900BEDEAF /* JYKViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		69037D392230F2DA00BEDEAF /* JYKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69037D372230F2D900BEDEAF /* JYKViewController.m */; };
 		697B37442223BF25002946EC /* JYKVideoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 697B37422223BF25002946EC /* JYKVideoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +26,8 @@
 		697B37C52224D530002946EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B37C42224D530002946EC /* main.m */; };
 		697B37CA2224D548002946EC /* JYKVideoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697B373F2223BF25002946EC /* JYKVideoKit.framework */; };
 		697B37CB2224D548002946EC /* JYKVideoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 697B373F2223BF25002946EC /* JYKVideoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		69811EB02244E4E300E97E7F /* JYKCaptureDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 69811EAE2244E4E300E97E7F /* JYKCaptureDevice.h */; };
+		69811EB12244E4E300E97E7F /* JYKCaptureDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 69811EAF2244E4E300E97E7F /* JYKCaptureDevice.m */; };
 		69FA51A62231FCDB00080FF8 /* JYKVideoContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 69FA51A42231FCDB00080FF8 /* JYKVideoContext.h */; };
 		69FA51A72231FCDB00080FF8 /* JYKVideoContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FA51A52231FCDB00080FF8 /* JYKVideoContext.m */; };
 		69FA51AB22320D5400080FF8 /* JYKVideoQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 69FA51A922320D5400080FF8 /* JYKVideoQueue.h */; };
@@ -61,8 +61,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		69037D28222FB2C200BEDEAF /* JYKDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKDevice.h; sourceTree = "<group>"; };
-		69037D29222FB2C200BEDEAF /* JYKDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKDevice.m; sourceTree = "<group>"; };
 		69037D362230F2D900BEDEAF /* JYKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKViewController.h; sourceTree = "<group>"; };
 		69037D372230F2D900BEDEAF /* JYKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKViewController.m; sourceTree = "<group>"; };
 		69037D3A2230F58D00BEDEAF /* JYKAssertDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKAssertDefine.h; sourceTree = "<group>"; };
@@ -88,6 +86,9 @@
 		697B37C12224D530002946EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		697B37C32224D530002946EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		697B37C42224D530002946EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		69811EAD2244E2CC00E97E7F /* JYKCommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKCommonDefine.h; sourceTree = "<group>"; };
+		69811EAE2244E4E300E97E7F /* JYKCaptureDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKCaptureDevice.h; sourceTree = "<group>"; };
+		69811EAF2244E4E300E97E7F /* JYKCaptureDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKCaptureDevice.m; sourceTree = "<group>"; };
 		69FA51A42231FCDB00080FF8 /* JYKVideoContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKVideoContext.h; sourceTree = "<group>"; };
 		69FA51A52231FCDB00080FF8 /* JYKVideoContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKVideoContext.m; sourceTree = "<group>"; };
 		69FA51A922320D5400080FF8 /* JYKVideoQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKVideoQueue.h; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				69037D3A2230F58D00BEDEAF /* JYKAssertDefine.h */,
+				69811EAD2244E2CC00E97E7F /* JYKCommonDefine.h */,
 			);
 			path = Defs;
 			sourceTree = "<group>";
@@ -172,8 +174,8 @@
 				697B378F2223C6C5002946EC /* JYKRecordViewController.m */,
 				697B377A2223C5D1002946EC /* JYKVideoRecorder.h */,
 				697B377B2223C5D1002946EC /* JYKVideoRecorder.m */,
-				69037D28222FB2C200BEDEAF /* JYKDevice.h */,
-				69037D29222FB2C200BEDEAF /* JYKDevice.m */,
+				69811EAE2244E4E300E97E7F /* JYKCaptureDevice.h */,
+				69811EAF2244E4E300E97E7F /* JYKCaptureDevice.m */,
 			);
 			path = Record;
 			sourceTree = "<group>";
@@ -249,8 +251,8 @@
 				697B37842223C623002946EC /* JYKBaseViewController.h in Headers */,
 				697B37902223C6C5002946EC /* JYKRecordViewController.h in Headers */,
 				69FA51AB22320D5400080FF8 /* JYKVideoQueue.h in Headers */,
+				69811EB02244E4E300E97E7F /* JYKCaptureDevice.h in Headers */,
 				697B378C2223C68D002946EC /* JYKPreView.h in Headers */,
-				69037D2A222FB2C200BEDEAF /* JYKDevice.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,9 +362,9 @@
 				69037D392230F2DA00BEDEAF /* JYKViewController.m in Sources */,
 				697B37912223C6C5002946EC /* JYKRecordViewController.m in Sources */,
 				69FA51AC22320D5400080FF8 /* JYKVideoQueue.m in Sources */,
-				69037D2B222FB2C200BEDEAF /* JYKDevice.m in Sources */,
 				69FA51B422323A8800080FF8 /* UIView+JYKLayout.m in Sources */,
 				69FA51A72231FCDB00080FF8 /* JYKVideoContext.m in Sources */,
+				69811EB12244E4E300E97E7F /* JYKCaptureDevice.m in Sources */,
 				697B377D2223C5D1002946EC /* JYKVideoRecorder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

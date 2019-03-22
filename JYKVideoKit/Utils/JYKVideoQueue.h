@@ -7,12 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JYKCommonDefine.h"
 
 @interface JYKVideoQueue : NSObject
 
-- (instancetype)initWithQueueIdentifier:(NSString *)identifier;
+JYK_INIT_UNAVAILABLE
 
 @property (nonatomic, readonly) dispatch_queue_t contextQueue;
+
+- (instancetype)initWithQueueIdentifier:(NSString *)identifier;
 
 - (BOOL)isCurrentQueue;
 

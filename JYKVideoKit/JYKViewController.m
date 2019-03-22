@@ -19,7 +19,7 @@
 - (instancetype)init
 {
     JYKRecordViewController *vcRecord = [[JYKRecordViewController alloc] init];
-    JYKSafeValueAssert(vcRecord, nil);
+    JYKSafeAssert(vcRecord, nil);
     
     self = [super initWithRootViewController:vcRecord];
     if (self) {

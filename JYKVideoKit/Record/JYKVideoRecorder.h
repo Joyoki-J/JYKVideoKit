@@ -9,13 +9,19 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JYKPreView.h"
+
+@class JYKPreView;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JYKVideoRecorder : NSObject
 
-@property (nonatomic, strong, readonly) JYKPreView *preView;
+@property (nonatomic, readonly) JYKPreView *preView;
+
+- (instancetype)initWithPreView:(JYKPreView *)preView;
+
+- (BOOL)startPreView;
+- (BOOL)stopPreView;
 
 @end
 

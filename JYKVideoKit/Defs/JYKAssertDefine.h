@@ -6,12 +6,12 @@
 //  Copyright © 2019年 Joyoki. All rights reserved.
 //
 
-#ifndef Header_h
-#define Header_h
+#ifndef JYKAssertDefine_h
+#define JYKAssertDefine_h
 
-#define JYKSafeValueAssert(flag, returnValue) \
-if (!(flag)) {                                \
-    return (returnValue);                     \
+#define JYKSafeAssert(flag, returnValue) \
+if (!(flag)) {                           \
+    return (returnValue);                \
 }
 
 

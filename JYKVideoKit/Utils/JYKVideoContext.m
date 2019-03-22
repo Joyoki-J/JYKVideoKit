@@ -95,7 +95,7 @@
 }
 
 
-#pragma mark - geters
+#pragma mark - Get
 - (JYKVideoQueue *)queue_session {
     if (!_queue_session) {
         _queue_session = [[JYKVideoQueue alloc] initWithQueueIdentifier:kJYKSessionQueueIdentifier];
