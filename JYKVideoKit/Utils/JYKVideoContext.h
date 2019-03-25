@@ -7,15 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#include "JYKCommonDefine.h"
-#include "JYKVideoQueue.h"
+#import "JYKCommonDefine.h"
+#import "JYKContextQueue.h"
 
 @interface JYKVideoContext : NSObject
 
 JYK_INIT_UNAVAILABLE
 
-+ (void)runAsynchronouslyOnQueue:(JYKVideoQueue *)queue block:(void(^)(void))block;
-+ (void)runSynchronouslyOnQueue:(JYKVideoQueue *)queue block:(void(^)(void))block;
++ (void)runAsynchronouslyOnQueue:(JYKContextQueue *)queue block:(void(^)(void))block;
++ (void)runSynchronouslyOnQueue:(JYKContextQueue *)queue block:(void(^)(void))block;
 
 + (void)runAsynchronouslyOnSessionQueue:(void(^)(void))block;
 + (void)runSynchronouslyOnSessionQueue:(void(^)(void))block;

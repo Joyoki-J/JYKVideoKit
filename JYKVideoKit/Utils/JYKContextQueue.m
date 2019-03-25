@@ -1,14 +1,14 @@
 //
-//  JYKVideoQueue.m
+//  JYKContextQueue.m
 //  JYKVideoKit
 //
 //  Created by Jay on 2019/3/8.
 //  Copyright © 2019年 Joyoki. All rights reserved.
 //
 
-#import "JYKVideoQueue.h"
+#import "JYKContextQueue.h"
 
-@interface JYKVideoQueue ()
+@interface JYKContextQueue ()
 {
     dispatch_queue_t _queue;
     
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation JYKVideoQueue
+@implementation JYKContextQueue
 
 - (instancetype)initWithQueueIdentifier:(NSString *)identifier
 {
@@ -39,6 +39,11 @@
 
 - (BOOL)isCurrentQueue {
     return dispatch_get_specific(_JYKContextQueueKey) ? YES : NO;
+}
+
+- (void)dealloc
+{
+    NSLog(@"JYKContextQueue dealloc %@",_identifier);
 }
 
 @end

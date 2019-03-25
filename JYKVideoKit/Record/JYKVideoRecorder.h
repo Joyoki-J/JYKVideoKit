@@ -8,13 +8,13 @@
 //  github: https://github.com/Joyoki-J/JYKVideoKit
 //
 
-#import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 
 @class JYKPreView;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JYKVideoRecorder : NSObject
+@interface JYKVideoRecorder : NSObject<AVCaptureVideoDataOutputSampleBufferDelegate,AVCaptureAudioDataOutputSampleBufferDelegate>
 
 @property (nonatomic, readonly) JYKPreView *preView;
 
@@ -22,6 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL)startPreView;
 - (BOOL)stopPreView;
+
+- (void)startRecording;
+- (void)finishRecordingWithHandler:(void(^)(void))handler;
 
 @end
 

@@ -20,7 +20,10 @@
 @end
 
 @implementation JYKRecordViewController
-
+- (void)dealloc
+{
+    NSLog(@"JYKRecordViewController dealloc");
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -33,6 +36,16 @@
     JYKPreView *preView = [[JYKPreView alloc] initWithFrame:self.view.bounds];
     [self.view insertSubview:preView atIndex:0];
     _recorder = [[JYKVideoRecorder alloc] initWithPreView:preView];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [_recorder startPreView];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [_recorder stopPreView];
 }
 
 #pragma mark - UI
@@ -48,7 +61,16 @@
 
 #pragma mark - Actions
 - (void)onClickStartAction:(UIButton *)sender {
-    sender.selected = !sender.isSelected;
+    if (sender.isSelected) {
+        [_recorder finishRecordingWithHandler:^{
+            [JYKVideoContext runAsynchronouslyOnMainQueue:^{
+                sender.selected = NO;
+            }];
+        }];
+    } else {
+        [_recorder startRecording];
+        sender.selected = YES;
+    }
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

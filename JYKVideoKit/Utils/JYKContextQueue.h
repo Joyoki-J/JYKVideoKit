@@ -1,5 +1,5 @@
 //
-//  JYKVideoQueue.h
+//  JYKContextQueue.h
 //  JYKVideoKit
 //
 //  Created by Jay on 2019/3/8.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "JYKCommonDefine.h"
 
-@interface JYKVideoQueue : NSObject
+@interface JYKContextQueue : NSObject
 
 JYK_INIT_UNAVAILABLE
 

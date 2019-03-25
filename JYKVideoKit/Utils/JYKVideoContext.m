@@ -7,7 +7,7 @@
 //
 
 #import "JYKVideoContext.h"
-#import "JYKVideoQueue.h"
+#import "JYKContextQueue.h"
 
 #define kJYKSessionQueueIdentifier @"com.joyoki.jykvideokit.session.queue"
 #define kJYKVideoQueueIdentifier   @"com.joyoki.jykvideokit.video.queue"
@@ -15,9 +15,9 @@
 
 @interface JYKVideoContext ()
 
-@property (nonatomic, strong) JYKVideoQueue *queue_session;
-@property (nonatomic, strong) JYKVideoQueue *queue_video;
-@property (nonatomic, strong) JYKVideoQueue *queue_audio;
+@property (nonatomic, strong) JYKContextQueue *queue_session;
+@property (nonatomic, strong) JYKContextQueue *queue_video;
+@property (nonatomic, strong) JYKContextQueue *queue_audio;
 
 @end
 
@@ -32,7 +32,7 @@
     return context;
 }
 
-+ (void)runAsynchronouslyOnQueue:(JYKVideoQueue *)queue block:(void(^)(void))block {
++ (void)runAsynchronouslyOnQueue:(JYKContextQueue *)queue block:(void(^)(void))block {
     if ([queue isCurrentQueue]) {
         block();
     } else {
@@ -40,7 +40,7 @@
     }
 }
 
-+ (void)runSynchronouslyOnQueue:(JYKVideoQueue *)queue block:(void(^)(void))block {
++ (void)runSynchronouslyOnQueue:(JYKContextQueue *)queue block:(void(^)(void))block {
     if ([queue isCurrentQueue]) {
         block();
     } else {
@@ -49,32 +49,32 @@
 }
 
 + (void)runAsynchronouslyOnSessionQueue:(void(^)(void))block {
-    JYKVideoQueue *queue = [JYKVideoContext sharedContext].queue_session;
+    JYKContextQueue *queue = [JYKVideoContext sharedContext].queue_session;
     [JYKVideoContext runAsynchronouslyOnQueue:queue block:block];
 }
 
 + (void)runSynchronouslyOnSessionQueue:(void(^)(void))block {
-    JYKVideoQueue *queue = [JYKVideoContext sharedContext].queue_session;
+    JYKContextQueue *queue = [JYKVideoContext sharedContext].queue_session;
     [JYKVideoContext runSynchronouslyOnQueue:queue block:block];
 }
 
 + (void)runAsynchronouslyOnVideoQueue:(void(^)(void))block {
-    JYKVideoQueue *queue = [JYKVideoContext sharedContext].queue_video;
+    JYKContextQueue *queue = [JYKVideoContext sharedContext].queue_video;
     [JYKVideoContext runAsynchronouslyOnQueue:queue block:block];
 }
 
 + (void)runSynchronouslyOnVideoQueue:(void(^)(void))block {
-    JYKVideoQueue *queue = [JYKVideoContext sharedContext].queue_video;
+    JYKContextQueue *queue = [JYKVideoContext sharedContext].queue_video;
     [JYKVideoContext runSynchronouslyOnQueue:queue block:block];
 }
 
 + (void)runAsynchronouslyOnAudioQueue:(void(^)(void))block {
-    JYKVideoQueue *queue = [JYKVideoContext sharedContext].queue_audio;
+    JYKContextQueue *queue = [JYKVideoContext sharedContext].queue_audio;
     [JYKVideoContext runAsynchronouslyOnQueue:queue block:block];
 }
 
 + (void)runSynchronouslyOnAudioQueue:(void(^)(void))block {
-    JYKVideoQueue *queue = [JYKVideoContext sharedContext].queue_audio;
+    JYKContextQueue *queue = [JYKVideoContext sharedContext].queue_audio;
     [JYKVideoContext runSynchronouslyOnQueue:queue block:block];
 }
 
@@ -96,23 +96,23 @@
 
 
 #pragma mark - Get
-- (JYKVideoQueue *)queue_session {
+- (JYKContextQueue *)queue_session {
     if (!_queue_session) {
-        _queue_session = [[JYKVideoQueue alloc] initWithQueueIdentifier:kJYKSessionQueueIdentifier];
+        _queue_session = [[JYKContextQueue alloc] initWithQueueIdentifier:kJYKSessionQueueIdentifier];
     }
     return _queue_session;
 }
 
-- (JYKVideoQueue *)queue_video {
+- (JYKContextQueue *)queue_video {
     if (!_queue_video) {
-        _queue_video = [[JYKVideoQueue alloc] initWithQueueIdentifier:kJYKVideoQueueIdentifier];
+        _queue_video = [[JYKContextQueue alloc] initWithQueueIdentifier:kJYKVideoQueueIdentifier];
     }
     return _queue_video;
 }
 
-- (JYKVideoQueue *)queue_audio {
+- (JYKContextQueue *)queue_audio {
     if (!_queue_audio) {
-        _queue_audio = [[JYKVideoQueue alloc] initWithQueueIdentifier:kJYKAudioQueueIdentifier];
+        _queue_audio = [[JYKContextQueue alloc] initWithQueueIdentifier:kJYKAudioQueueIdentifier];
     }
     return _queue_audio;
 }
