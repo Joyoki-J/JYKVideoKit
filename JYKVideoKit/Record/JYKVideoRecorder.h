@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)stopPreView;
 
 - (void)startRecording;
-- (void)finishRecordingWithHandler:(void(^)(void))handler;
+- (void)finishRecordingWithHandler:(void(^)(NSURL *videoURL))handler;
 
 @end
 

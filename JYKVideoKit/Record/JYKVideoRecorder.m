@@ -28,6 +28,9 @@
     JYKContextQueue *_videoProcessingQueue;
     
     JYKVideoWriter *_videoWriter;
+    
+    NSURL *_videoURL;
+
 }
 
 @end
@@ -169,11 +172,16 @@
 }
 
 - (void)startRecording {
-    [_videoWriter startRecordingWithURL:[self newMovieFile]];
+    _videoURL = [self newMovieFile];
+    [_videoWriter startRecordingWithURL:_videoURL];
 }
 
-- (void)finishRecordingWithHandler:(void(^)(void))handler {
-    [_videoWriter finishRecordingWithCompletionHandler:handler];
+- (void)finishRecordingWithHandler:(void(^)(NSURL *videoURL))handler {
+    [_videoWriter finishRecordingWithCompletionHandler:^{
+        if (handler) {
+            handler(self->_videoURL);
+        }
+    }];
 }
 
 #pragma mark - AVCaptureVideoDataOutputSampleBufferDelegate&AVCaptureAudioDataOutputSampleBufferDelegate

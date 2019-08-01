@@ -12,6 +12,8 @@
 #import "JYKVideoRecorder.h"
 #import "JYKPreView.h"
 #import "JYKVideoContext.h"
+#import "JYKViewController.h"
+#import "JYKViewController+JYK.h"
 
 @interface JYKRecordViewController ()
 
@@ -62,15 +64,22 @@
 #pragma mark - Actions
 - (void)onClickStartAction:(UIButton *)sender {
     if (sender.isSelected) {
-        [_recorder finishRecordingWithHandler:^{
+        JYK_WEAK_SELF
+        [_recorder finishRecordingWithHandler:^(NSURL * _Nonnull videoURL) {
             [JYKVideoContext runAsynchronouslyOnMainQueue:^{
                 sender.selected = NO;
+                JYK_STRONG_SELF
+                [strongSelf finishRecordingWithURL:videoURL];
             }];
         }];
     } else {
         [_recorder startRecording];
         sender.selected = YES;
     }
+}
+
+- (void)finishRecordingWithURL:(NSURL *)URL {
+    [(JYKViewController *)self.navigationController didFinishRecordingVideo:URL];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

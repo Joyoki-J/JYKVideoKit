@@ -10,8 +10,9 @@
 
 #import "ViewController.h"
 #import <JYKVideoKit/JYKVideoKit.h>
+#import <AVKit/AVKit.h>
 
-@interface ViewController ()
+@interface ViewController ()<JYKViewControllerDelegate>
 
 @end
 
@@ -32,8 +33,25 @@
 
 - (void)onClickAction {
     JYKViewController *vcRecord = [[JYKViewController alloc] init];
+    vcRecord.jyk_delegate = self;
     [self presentViewController:vcRecord animated:YES completion:nil];
 }
 
+- (void)jyk_viewController:(JYKViewController *)vc didFinishRecordingVideo:(NSURL *)videoURL {
+    [vc dismissViewControllerAnimated:YES completion:^{
+        [self goToPlayWithURL:videoURL];
+    }];
+}
+
+- (void)goToPlayWithURL:(NSURL *)url {
+    
+    AVPlayerViewController *playerVC = [[AVPlayerViewController alloc] init];
+    playerVC.player = [AVPlayer playerWithURL:url];
+    playerVC.showsPlaybackControls = YES;
+    if (playerVC.readyForDisplay) {
+        [playerVC.player play];
+    }
+    [self.navigationController pushViewController:playerVC animated:YES];
+}
 
 @end

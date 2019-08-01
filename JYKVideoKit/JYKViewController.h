@@ -10,7 +10,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol JYKViewControllerDelegate;
+
 @interface JYKViewController : UINavigationController
+
+@property (nonatomic, weak) id<JYKViewControllerDelegate> jyk_delegate;
+
+@end
+
+@protocol JYKViewControllerDelegate <NSObject>
+
+- (void)jyk_viewController:(JYKViewController *)vc didFinishRecordingVideo:(NSURL *)videoURL;
 
 @end
 
