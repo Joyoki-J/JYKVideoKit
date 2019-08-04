@@ -9,13 +9,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AVFoundation/AVFoundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JYKPreView : UIView
 
-@property (nonatomic, strong, readonly) AVCaptureVideoPreviewLayer *previewLayer;
+- (void)render:(CVPixelBufferRef)pixelBuffer;
 
 @end
 

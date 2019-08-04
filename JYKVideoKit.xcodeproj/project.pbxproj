@@ -10,6 +10,7 @@
 		1F9A507E22F31C48000BFCA9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 697B37AD2224D46B002946EC /* Default-568h@2x.png */; };
 		1F9A50B022F32200000BFCA9 /* JYKViewController+JYK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F9A50AE22F32200000BFCA9 /* JYKViewController+JYK.h */; };
 		1F9A50B122F32200000BFCA9 /* JYKViewController+JYK.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9A50AF22F32200000BFCA9 /* JYKViewController+JYK.m */; };
+		1F9A50D722F72F25000BFCA9 /* JYKShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1F9A50D622F72F25000BFCA9 /* JYKShader.metal */; };
 		69037D382230F2DA00BEDEAF /* JYKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 69037D362230F2D900BEDEAF /* JYKViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		69037D392230F2DA00BEDEAF /* JYKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69037D372230F2D900BEDEAF /* JYKViewController.m */; };
 		697B37442223BF25002946EC /* JYKVideoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 697B37422223BF25002946EC /* JYKVideoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -68,6 +69,8 @@
 /* Begin PBXFileReference section */
 		1F9A50AE22F32200000BFCA9 /* JYKViewController+JYK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JYKViewController+JYK.h"; sourceTree = "<group>"; };
 		1F9A50AF22F32200000BFCA9 /* JYKViewController+JYK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JYKViewController+JYK.m"; sourceTree = "<group>"; };
+		1F9A50D622F72F25000BFCA9 /* JYKShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = JYKShader.metal; sourceTree = "<group>"; };
+		1F9A50D822F72F3F000BFCA9 /* JYKShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKShaderTypes.h; sourceTree = "<group>"; };
 		69037D362230F2D900BEDEAF /* JYKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKViewController.h; sourceTree = "<group>"; };
 		69037D372230F2D900BEDEAF /* JYKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYKViewController.m; sourceTree = "<group>"; };
 		69037D3A2230F58D00BEDEAF /* JYKAssertDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYKAssertDefine.h; sourceTree = "<group>"; };
@@ -125,6 +128,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F9A50D522F72D5A000BFCA9 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				1F9A50D622F72F25000BFCA9 /* JYKShader.metal */,
+				1F9A50D822F72F3F000BFCA9 /* JYKShaderTypes.h */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
 		69037D2C222FB54B00BEDEAF /* Defs */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +173,7 @@
 				69037D372230F2D900BEDEAF /* JYKViewController.m */,
 				1F9A50AE22F32200000BFCA9 /* JYKViewController+JYK.h */,
 				1F9A50AF22F32200000BFCA9 /* JYKViewController+JYK.m */,
+				1F9A50D522F72D5A000BFCA9 /* Shader */,
 				69037D2C222FB54B00BEDEAF /* Defs */,
 				697B37732223C4FA002946EC /* Record */,
 				697B37772223C526002946EC /* Preview */,
@@ -373,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F9A50D722F72F25000BFCA9 /* JYKShader.metal in Sources */,
 				697B37852223C623002946EC /* JYKBaseViewController.m in Sources */,
 				697B378D2223C68D002946EC /* JYKPreView.m in Sources */,
 				69037D392230F2DA00BEDEAF /* JYKViewController.m in Sources */,

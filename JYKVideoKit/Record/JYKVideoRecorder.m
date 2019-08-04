@@ -76,12 +76,6 @@
     
     [_captureSession commitConfiguration];
     
-    AVCaptureVideoPreviewLayer *layer = [AVCaptureVideoPreviewLayer layerWithSession:_captureSession];
-    layer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-    layer.frame = _preView.bounds;
-    [_preView.layer addSublayer:layer];
-    
-    
     _videoWriter = [[JYKVideoWriter alloc] init];
     
     return self;
@@ -191,6 +185,9 @@
     CMTime currentTime = CMSampleBufferGetPresentationTimeStamp(sampleBuffer);
     CVPixelBufferRef pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
     
+    //渲染
+    [_preView render:pixelBuffer];
+    //写入文件
     [_videoWriter newFrameReadyAtTime:currentTime framebuffer:pixelBuffer];
 }
 
@@ -209,7 +206,7 @@
         }
     }
     
-    NSString *fileName = [NSString stringWithFormat:@"AH%ldiOS.MOV", (NSInteger)[[NSDate date] timeIntervalSince1970]];
+    NSString *fileName = [NSString stringWithFormat:@"AH%ldiOS.MOV", (long)[[NSDate date] timeIntervalSince1970]];
     tmpDir = [tmpDir stringByAppendingPathComponent:fileName];
     if ([fileManager fileExistsAtPath:tmpDir]) {
         [fileManager removeItemAtPath:tmpDir error:nil];

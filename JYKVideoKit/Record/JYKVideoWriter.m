@@ -139,7 +139,7 @@
             if (self.assetWriterPixelBufferInput &&
                 self.assetWriterVideoInput && self.assetWriterVideoInput.readyForMoreMediaData && self.assetWriter.status == AVAssetWriterStatusWriting) {
                 if (![self.assetWriterPixelBufferInput appendPixelBuffer:framebuffer withPresentationTime:frameTime]) {
-                    NSLog(@"1111111111111");
+                    NSLog(@"Couldn't append PixelBuffer");
                 }
             } else {
                 NSLog(@"Couldn't write a frame");
